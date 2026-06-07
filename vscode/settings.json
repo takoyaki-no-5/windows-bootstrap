@@ -1,0 +1,38 @@
+{
+  // Vim
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+
+  // Python
+  /****Pythonの型でどこまでエラー出すかみたいなやつ****
+  "python.languageServer": "Pylance",
+  "python.analysis.languageServerMode": "default",
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },*/
+
+  // Terminal
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.defaultProfile.linux": "bash",
+
+  // Editor
+  "files.autoSave": "afterDelay",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+
+  // UI
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Live Server
+  "liveServer.settings.useLocalIp": true,
+
+  // GitHub Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
+}

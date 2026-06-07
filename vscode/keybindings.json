@@ -1,0 +1,86 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    // Sidebarが閉じている場合は開いてフォーカス
+    "key": "ctrl+b",
+    "command": "workbench.action.focusSideBar",
+    "when": "!sideBarVisible"
+  },
+  {
+    // Sidebarが開いている場合は閉じる
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible"
+  },
+
+  // {
+  //   // TerminalでCtrl+Pをシェルへそのまま送る
+  //   "key": "ctrl+p",
+  //   "command": "workbench.action.terminal.sendSequence",
+  //   "args": { "text": "\u0010" },
+  //   "when": "terminalFocus"
+  // },
+
+  {
+    // 現在のタブを閉じる
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    // Ctrl+Xの標準Cutを無効化
+    "key": "ctrl+x",
+    "command": "-editor.action.clipboardCutAction"
+  },
+  {
+    // Vim拡張のCtrl+Xを無効化
+    "key": "ctrl+x",
+    "command": "-extension.vim_ctrl+x",
+    "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+  },
+  {
+    // Explorer上でのCutを無効化
+    "key": "ctrl+x",
+    "command": "-filesExplorer.cut",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+
+  {
+    // ファイル検索(Quick Open)
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
+
+  {
+    // Ctrl+Eの標準Quick Openを無効化
+    // Ctrl+Pに寄せるため
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+
+  {
+    // Explorerで新規ファイル作成
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+
+  {
+    // Copilot Chatへフォーカス
+    "key": "ctrl+c",
+    "command": "workbench.panel.chat.view.copilot.focus",
+    "when": "editorTextFocus"
+  },
+
+  {
+    // Copilot Chatを閉じる
+    "key": "ctrl+c",
+    "command": "workbench.action.closeAuxiliaryBar",
+    "when": "auxiliaryBarFocus"
+  },
+
+  {
+    // Explorerで新規フォルダ作成
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder"
+  }
+]

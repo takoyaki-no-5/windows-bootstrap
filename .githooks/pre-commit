@@ -1,0 +1,8 @@
+@'
+#!/bin/sh
+set -e
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/export-vscode-extensions.ps1
+
+git add vscode/extensions.txt 
+'@ | Set-Content -Encoding UTF8 .\.githooks\pre-commit
