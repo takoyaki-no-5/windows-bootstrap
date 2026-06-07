@@ -1,0 +1,27 @@
+packages:
+
+  # ===== 開発ツール =====
+
+  - id: Microsoft.VisualStudioCode           # VSCode
+  - id: JGraph.Draw                          # draw.io (図作成)
+  - id: Insomnia.Insomnia                    # APIクライアント(Postman系)
+  - id: OpenJS.NodeJS.22                     # Node.js
+  - id: EclipseAdoptium.Temurin.25.JDK       # Java JDK
+  - id: Python.Python.3.12                   # Python本体
+  - id: Python.Launcher                      # pyコマンド用ランチャー
+  - id: ArduinoSA.IDE.stable                 # Arduino IDE (マイコン開発)
+
+  # ===== ターミナル・Linux環境 =====
+
+  - id: Microsoft.WindowsTerminal            # Windows Terminal
+  - id: Microsoft.WSL                        # Windows Subsystem for Linux
+  - id: Canonical.Ubuntu.2404                # Ubuntu 24.04 (WSL)
+
+  # ===== 個人環境 =====
+
+  - id: Brave.Brave                          # Braveブラウザ
+  - id: Obsidian.Obsidian                    # Obsidian
+  - id: Anki.Anki                            # Anki
+  - id: Bitwarden.Bitwarden                  # パスワード管理
+  - id: AutoHotkey.AutoHotkey                # AutoHotkey
+  - id: Google.JapaneseIME                   # Google日本語入力
