@@ -1,5 +1,4 @@
-﻿jakobhoeg.vscode-pokemon
-mark-wiemer.vscode-autohotkey-plus-plus
+﻿mark-wiemer.vscode-autohotkey-plus-plus
 millenniumambiguity.processing-formatter
 ms-ceintl.vscode-language-pack-ja
 ms-python.black-formatter
@@ -21,7 +20,6 @@ tamasfe.even-better-toml
 thqby.vscode-autohotkey2-lsp
 tobiah.language-pde
 twxs.cmake
-undefined_publisher.sudolang-llm-support
 visualstudioexptteam.intellicode-api-usage-examples
 visualstudioexptteam.vscodeintellicode
 vmware.vscode-boot-dev-pack
