@@ -2,7 +2,8 @@ packages:
 
   # ===== 開発ツール =====
 
-  - id: Microsoft.VisualStudioCode           # VSCode
+  - id: Git.Git
+  - id: Microsoft.VisualStudioCode           
   - id: JGraph.Draw                          # draw.io (図作成)
   - id: Insomnia.Insomnia                    # APIクライアント(Postman系)
   - id: OpenJS.NodeJS.22                     # Node.js
