@@ -1,4 +1,5 @@
-﻿jakobhoeg.vscode-pokemon
+﻿dotjoshjohnson.xml
+jakobhoeg.vscode-pokemon
 mark-wiemer.vscode-autohotkey-plus-plus
 millenniumambiguity.processing-formatter
 ms-ceintl.vscode-language-pack-ja
