@@ -2,5 +2,7 @@
 set -e
 
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/export-vscode-extensions.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/build-ahk.ps1
 
 git add vscode/extensions.txt
+git add dist/basic_keyboard.exe
