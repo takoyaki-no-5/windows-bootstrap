@@ -14,7 +14,7 @@ run1 := "Obsidian"
 run2 := "ChatGPT"
 run3 := "Brave"
 run4 := "Visual Studio Code"
-run5 := "terminal"
+run5 := "Terminal"
 
 group1 := "Obsidian"
 group2 := "ChatGPT"
@@ -25,8 +25,10 @@ group5 := "terminal"
 if FileExist(FilePath)
 {
     FileContent := FileRead("..\.env","UTF-8")
-    
-	splitContent := StrSplit(FileContent,"`r`n")
+    splitContent := StrSplit(
+        StrReplace(FileContent, "`r`n", "`n"),
+        "`n"
+    )
 
 	win1 := [Trim(splitContent[1]),run1,group1]
 	win2 := [Trim(splitContent[2]),run2,group2]

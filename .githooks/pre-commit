@@ -5,4 +5,4 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/export-vscode-ex
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/build-ahk.ps1
 
 git add vscode/extensions.txt
-git add dist/basic_keyboard.exe
+git add autohotkey/basic_keyboard/Main.exe
