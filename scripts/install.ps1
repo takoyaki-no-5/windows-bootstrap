@@ -41,3 +41,6 @@ foreach ($pkg in $config.packages) {
         --accept-package-agreements `
         --accept-source-agreements
 }
+
+# AutoHotkey Startup登録
+& "$PSScriptRoot\autohotkey-startup.ps1"
