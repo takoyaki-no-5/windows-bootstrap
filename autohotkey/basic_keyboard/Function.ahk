@@ -1,5 +1,6 @@
 ﻿#Requires AutoHotkey v2.0
 #Include ../IMEv2.ahk
+#Include applications\VScode\utils.ahk
 
 WIN_ERROR_TXT1 := "ウィンドウ:"
 WIN_ERROR_TXT2 := "が見つかりません`n`n文字列があってるか確認して下さい。`nenv.txtを変更したらその後起動しなおしてください。`n文字コードはutf-8でお願いします。`n`n`n※※※※※※※※※※※※※※`nこのエラーメッセージは`n`nウィンドウ:XXXが見つかりません`n`nの形式で送ってるので、`n`nウィンドウ:XXX`nが見つかりません`n`nとかだったら変な改行が入っちゃってるかも。`n※※※※※※※※※※※※※※"
@@ -30,6 +31,26 @@ WrapWinActive(winarr, ThisHotkey) {
         if (A_PriorHotkey != ThisHotkey) {
             GroupActivate winarr[3], "R"
 
+        } else {
+            GroupActivate winarr[3]
+        }
+    } catch as err {
+        MsgBox(UNEXPECTED_ERROR)
+    }
+}
+
+WrapIdeWinActive(winarr, ThisHotkey) {
+    try {
+        if (!WinExist(vscode) && !WinExist(cursor)) {
+            Run(winarr[2], A_ScriptDir . "\..\applications_shortcut")
+            Sleep 1000
+        }
+        if (WinExist(vscode))
+            GroupAdd winarr[3], vscode
+        if (WinExist(cursor))
+            GroupAdd winarr[3], cursor
+        if (A_PriorHotkey != ThisHotkey) {
+            GroupActivate winarr[3], "R"
         } else {
             GroupActivate winarr[3]
         }

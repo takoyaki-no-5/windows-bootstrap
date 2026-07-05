@@ -41,6 +41,16 @@ $apps = @(
     }
 
     @{
+        Name = "Cursor"
+        Candidates = @(
+            Join-Path $localAppData "Programs\cursor\Cursor.exe"
+            Join-Path $localAppData "Programs\Cursor\Cursor.exe"
+            "Cursor.exe"
+        )
+        Arguments = ""
+    }
+
+    @{
         Name = "Obsidian"
         Candidates = @(
             Join-Path $localAppData "Obsidian\Obsidian.exe"

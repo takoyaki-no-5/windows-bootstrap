@@ -13,7 +13,7 @@ FilePath := A_ScriptDir . "\..\.env"
 run1 := "Obsidian"
 run2 := "ChatGPT"
 run3 := "Brave"
-run4 := "Visual Studio Code"
+run4 := "Cursor"
 run5 := "Terminal"
 
 group1 := "Obsidian"
@@ -50,6 +50,7 @@ GroupAdd "MainWindows",win1[1]
 GroupAdd "MainWindows",win2[1]
 GroupAdd "MainWindows",win3[1]
 GroupAdd "MainWindows",win4[1]
+GroupAdd "MainWindows","ahk_exe Code.exe"
 GroupAdd "MainWindows",win5[1]
 
 ;タスクバーの高さを取得

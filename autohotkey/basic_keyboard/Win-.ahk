@@ -11,7 +11,7 @@ e::ActiveWinMoveRight()
 ;t
 ;y
 u::Send("{LWin}") ;#u::スタートメニュー
-i::WrapWinActive(win4,ThisHotkey)
+i::WrapIdeWinActive(win4,ThisHotkey)
 o::WrapWinActive(win5,ThisHotkey)
 ;p
 

@@ -2,6 +2,6 @@
 #Include ../../Funk.ahk
 #Include utils.ahk
 
-#HotIf ctrl_shift_are_held() and WinActive(vscode)
+#HotIf ctrl_shift_are_held() and ide_is_active()
 p::^@
 #HotIf

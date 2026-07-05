@@ -2,13 +2,13 @@
 #Include ../../Funk.ahk
 #Include utils.ahk
 
-#HotIf win_is_held() and WinActive(vscode)
+#HotIf win_is_held() and ide_is_active()
 ;タブ移動
 h::Send("^{PgUp}")
 l::Send("^{PgDn}")
 #HotIf
 
-#HotIf ctrl_is_held() and WinActive(vscode)
+#HotIf ctrl_is_held() and ide_is_active()
 p::^+p ;コマンドパレット
 s::^F5 ;実行
 x::^p  ;ファイルに移動

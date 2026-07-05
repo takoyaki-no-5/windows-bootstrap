@@ -16,8 +16,8 @@
     SendInput "{Home}+{Enter}{up}"
 }
 
-;vscodeはこのコマンドでタブ移動するらしい
-#HotIf WinActive("ahk_exe Code.exe")
+;vscode/cursorはこのコマンドでタブ移動するらしい
+#HotIf WinActive("ahk_exe Code.exe") or WinActive("ahk_exe Cursor.exe")
     ^o::{
         SendInput "{End}{Enter}"
     }
@@ -70,7 +70,7 @@
 ^F2::WrapWinMoveActive(A_ScreenWidth/2,0,A_ScreenWidth/2,windowHeight,win2)
 ;ウィンドウアクティブ
 ^F3::WrapWinActive(win3,ThisHotkey)
-^F4::WrapWinActive(win4,ThisHotkey)
+^F4::WrapIdeWinActive(win4,ThisHotkey)
 ^F5::WrapWinActive(win5,ThisHotkey)
 
 ;pでwin1~5以外のウィンドウを切り替える

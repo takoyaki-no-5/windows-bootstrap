@@ -39,7 +39,7 @@ m::MouseMove A_ScreenWidth/2-100,A_ScreenHeight-200 ;マウスを特定の位置
 F1::WrapWinMoveActive(A_ScreenWidth/2,0,A_ScreenWidth/2,windowHeight,win1) ;win1を右半分に
 F2::WrapWinMoveActive(A_ScreenWidth/2,0,A_ScreenWidth/2,windowHeight,win2) ;win2を右半分に
 F3::WrapWinActive(win3,ThisHotkey)
-F4::WrapWinActive(win4,ThisHotkey)
+F4::WrapIdeWinActive(win4,ThisHotkey)
 F5::WrapWinActive(win5,ThisHotkey)
 F6::ChangeWin6(ThisHotkey) ;win1~5以外のウィンドウを切り替える
 F7::ActiveWinMoveRight()
